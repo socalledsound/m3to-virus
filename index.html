@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body{
+            background-color: rgb(78, 39, 115);
+            font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+        h1{
+            text-align: center;
+            margin-top: 6rem;
+            color: white;
+            font-size: 6rem;
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        input{
+            width: 30px;
+            height: 30px;
+        }
+
+        input[type='radio']:after {
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        top: -2px;
+        left: -1px;
+        position: relative;
+        background-color: #d1d3d1;
+        content: '';
+        display: inline-block;
+        visibility: visible;
+        border: 2px solid white;
+        
+    }
+
+    label{
+        margin-right:2rem;
+    }
+
+        .quiz-item{
+         margin-bottom: 1.2rem;  
+         color: white;
+         font-size: 2rem; 
+        }
+
+    </style>
+
+    <title>M3TO</title>
+</head>
+<body>
+    <div class="intro-quiz">
+        <h1>is humanity a virus?</h1>
+        <form>
+            <div class="quiz-item">
+                <label>yes</label>
+                <input type='radio'/>
+            </div>
+            <div class="quiz-item">
+                <label>yes</label>
+                <input type='radio'/>
+            </div>
+            <div class="submit-button">
+                <button>
+                    submit
+                </button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>
